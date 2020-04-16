@@ -88,15 +88,15 @@ a:active {
 }
 
 .release ul {
-  height: 100%;
+  display: block;
+  height: 14px;
+  margin: 8px 0;
 }
 
 .release .release-item {
   display: inline-block;
-  height: 14px;
   padding-left: 15px;
   padding-right: 10px;
-  margin: 8px 0;
 }
 
 .release .release-item a {
@@ -145,4 +145,39 @@ a:active {
   font-size: 1.3rem;
   color: #BBBBBB;
   line-height: 19px;
+}
+
+.main-header {
+  display: block;
+  height: 13px;
+  width: 1125px;
+  margin-top: 9px;
+  margin-bottom: 10px;
+  font-size: 0px;
+}
+
+.main-header ul {
+  display: block;
+  height: 100%;
+}
+
+.main-header .header-item {
+  display: inline-block;
+  padding-right: 10px;
+  height: 100%;
+}
+
+.main-header .header-item+li {
+  border-left: 1px solid #BFC9D7;
+  padding-left: 10px;
+}
+
+.main-header .header-item a {
+  font-size: 1.3rem;
+}
+
+.main-header .header-item.active a {
+  font-weight: bold;
+  color: #fff;
+  line-height: 13px;
 }
