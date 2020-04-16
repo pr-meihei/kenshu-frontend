@@ -181,3 +181,37 @@ a:active {
   color: #fff;
   line-height: 13px;
 }
+
+.category-header {
+  display: block;
+  height: 36px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 0;
+  background-color: #fff;
+}
+
+.category-header ul {
+  display: block;
+  height: 16px;
+  width: 837px;
+  margin: 12px auto 11px;
+}
+
+.category-header .category-item {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.category-header .category-item:nth-last-child(1) {
+  margin-right: 0;
+}
+
+.category-header .category-item a {
+  font-size: 1.3rem;
+  color: #294C7A;
+}
+
+.category-header .category-item.active a {
+  font-weight: bold;
+}
