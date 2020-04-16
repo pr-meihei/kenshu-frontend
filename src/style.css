@@ -83,10 +83,7 @@ a:active {
   text-align: center;
   vertical-align: top;
   border-radius: 4px;
-}
-
-.release {
-  margin-left: 36px;
+  margin-left: 26px;
   margin-right: 11px;
 }
 
@@ -115,4 +112,37 @@ a:active {
 
 .release .release-item:nth-last-child(1) {
   padding-right: 15px;
+}
+
+.keyword {
+  display: inline-block;
+  height: 30px;
+  width: 288px;
+  text-align: center;
+  vertical-align: top;
+}
+
+.search-box .search-input {
+  display: inline-block;
+  height: 30px;
+  width: 258px;
+  border-radius: 4px 0px 0px 4px;
+  border: 0;
+  padding: 3px 15px;
+}
+
+.search-box .search-button {
+  display: inline-block;
+  background: #3081C9 url(./images/common/icon_search.svg) no-repeat scroll 6px 6px;
+  background-size: 17px 17px;
+  height: 30px;
+  width: 30px;
+  border-radius: 0px 4px 4px 0px;
+  border: 0;
+}
+
+.search-box .search-input::placeholder {
+  font-size: 1.3rem;
+  color: #BBBBBB;
+  line-height: 19px;
 }
