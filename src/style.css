@@ -74,3 +74,45 @@ a:active {
   color: #BFC9D7;
   line-height: 30px;
 }
+
+.header-small-container .release {
+  display: inline-block;
+  height: 30px;
+  width: 316px;
+  background-color: #345584;
+  text-align: center;
+  vertical-align: top;
+  border-radius: 4px;
+}
+
+.release {
+  margin-left: 36px;
+  margin-right: 11px;
+}
+
+.release ul {
+  height: 100%;
+}
+
+.release .release-item {
+  display: inline-block;
+  height: 14px;
+  padding-left: 15px;
+  padding-right: 10px;
+  margin: 8px 0;
+}
+
+.release .release-item a {
+  font-size: 1.3rem;
+  color: #fff;
+  line-height: 14px;
+}
+
+.release .release-item+li {
+  border-left: 1px solid #fff;
+  padding-left: 10px;
+}
+
+.release .release-item:nth-last-child(1) {
+  padding-right: 15px;
+}
