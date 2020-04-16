@@ -105,6 +105,10 @@ a:active {
   line-height: 14px;
 }
 
+.release .release-item a:hover {
+  border-bottom: 1px solid #fff;
+}
+
 .release .release-item+li {
   border-left: 1px solid #fff;
   padding-left: 10px;
@@ -176,9 +180,13 @@ a:active {
   font-size: 1.3rem;
 }
 
+.main-header .header-item.active a,
+.main-header .header-item a:hover {
+  color: #fff;
+}
+
 .main-header .header-item.active a {
   font-weight: bold;
-  color: #fff;
   line-height: 13px;
 }
 
@@ -212,6 +220,7 @@ a:active {
   color: #294C7A;
 }
 
-.category-header .category-item.active a {
+.category-header .category-item.active a,
+.category-header .category-item a:hover {
   font-weight: bold;
 }
