@@ -38,6 +38,13 @@ a:active {
 .header-small-container {
   display: block;
   height: 30px;
+  width: 1126px;
+  font-size: 0px;
+}
+
+.header-small-container .logo {
+  display: inline-block;
+  height: 30px;
   width: 485px;
 }
 
@@ -58,6 +65,7 @@ a:active {
   width: 335px;
   vertical-align: top;
   margin-left: 18px;
+  margin-right: 10px;
 }
 
 .header-small-container .logo .logo-text p {
