@@ -488,9 +488,13 @@ a:active {
   border-bottom: 1px solid #e0e0e0;
 }
 
-.footer-content .footer-list-row .footer-list {
-  width: 281px;
+.footer-list {
+  width: 25%;
   height: 210px;
+}
+
+.flx2 {
+  width: 50%;
 }
 
 .footer-list .footer-heading-4 {
@@ -502,6 +506,16 @@ a:active {
 
 .footer-list .footer-list-items {
   list-style: none;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 100%;
+  padding-bottom: 19px;
+}
+
+.footer-items-box {
+  height: 1.2rem;
+  margin-bottom: 18px;
 }
 
 .footer-list .footer-list-items li {
@@ -527,6 +541,7 @@ a:active {
 
 .footer-content .footer-term p {
   margin-right: 10px;
+  font-size: 1.2rem;
 }
 
 .footer-content .footer-term a:hover {
