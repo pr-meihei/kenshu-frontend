@@ -326,7 +326,7 @@ a:active {
   margin-top: 4px;
 }
 
-.header2 {
+.heading-2 {
   margin: 0 0 35px;
   font-size: 2.4rem;
   font-weight: bold;
@@ -425,7 +425,7 @@ a:active {
   width: 312px;
 }
 
-.header3 {
+.heading-3 {
   font-size: 1.8rem;
   font-weight: bold;
   color: #3b3b3b;
@@ -470,4 +470,56 @@ a:active {
   text-stroke: 0px;
   -webkit-text-stroke: 0px;
   color: #3081C9;
+}
+
+.footer {
+  background-color: #fafafa;
+  padding-top: 60px;
+}
+
+.footer-content {
+  display: block;
+  width: 1125px;
+  height: 296px;
+  margin: 0 auto;
+  color: #797979;
+}
+
+.footer-content .footer-list-row {
+  display: flex;
+  height: 230px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.footer-content .footer-list-row .footer-list {
+  width: 281px;
+  height: 210px;
+}
+
+.footer-list .footer-heading-4 {
+  color: #000000;
+  font-weight: normal;
+  font-size: 1.3rem;
+  margin-bottom: 18px;
+}
+
+.footer-list .footer-list-items p {
+  margin-bottom: 18px;
+  color: #797979;
+  font-size: 1.2rem;
+}
+
+.footer-content .footer-term {
+  display: flex;
+  height: 46px;
+  padding-top: 16px;
+  padding-bottom: 18px;
+}
+
+.footer-content .footer-term p {
+  margin-right: 10px;
+}
+
+.footer-content .copyright {
+  font-size: 1.1rem;
 }
