@@ -503,10 +503,22 @@ a:active {
   margin-bottom: 18px;
 }
 
-.footer-list .footer-list-items p {
+.footer-list .footer-list-items {
+  list-style: none;
+}
+
+.footer-list .footer-list-items li {
   margin-bottom: 18px;
+}
+
+.footer-list .footer-list-items a {
   color: #797979;
   font-size: 1.2rem;
+}
+
+.footer-list .footer-list-items a:hover {
+  color: #3b3b3b;
+  border-bottom: 1px solid #3b3b3b;
 }
 
 .footer-content .footer-term {
