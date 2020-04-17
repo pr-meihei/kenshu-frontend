@@ -294,33 +294,128 @@ a:active {
   color: #3081c9;
 }
 
-.ranking-content-frame .ranking-datetime {
+.datetime {
   display: flex;
   width: 100%;
   height: 14px;
+  color: #a2a2a2;
 }
 
-.ranking-content-frame .ranking-datetime img {
+.datetime img {
   display: block;
   width: 13px;
   height: 13px;
   margin-right: 5px;
 }
 
-.ranking-content-frame .ranking-datetime p {
+.datetime p {
   font-size: 1.2rem;
 }
 
-.ranking-content-frame .ranking-company {
+.ranking-content-frame .company {
   font-size: 1.3rem;
   margin-top: 3px;
 }
 
-.ranking-company a:hover {
+.company a:hover {
   color: #3b3b3b;
 }
 
 .ranking-content-frame .ranking-pv {
   font-size: 1.3rem;
   margin-top: 4px;
+}
+
+.header2 {
+  margin: 0 0 35px;
+  font-size: 2.4rem;
+  font-weight: bold;
+}
+
+.main-content-wrapper {
+  display: block;
+  width: 1126px;
+  height: 803px;
+  margin: 40px auto 0;
+}
+
+.main-frame {
+  display: flex;
+  width: 778px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.main-box {
+  display: block;
+  width: 380px;
+  height: 118px;
+  border-bottom: 1px solid #e4e4e4;
+}
+
+.main-box .main-row {
+  display: flex;
+  width: 100%;
+  height: 66px;
+  margin-top: 15px;
+  justify-content: space-between;
+}
+
+.main-row .main-text {
+  display: -webkit-box;
+  width: 265px;
+  height: 66px;
+  color: #3b3b3b;
+  font-size: 1.4rem;
+  font-weight: bold;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+  line-height: 22px;
+  transition: color 0.3s ease-in-out;
+}
+
+.main-box:hover .main-row .main-text {
+  text-decoration: underline;
+  color: #3081c9;
+}
+
+.main-box .main-img {
+  display: block;
+  width: 100px;
+  height: 66px;
+}
+
+.main-box .main-details-row {
+  display: flex;
+  margin-top: 4px;
+}
+
+.main-details-row .datetime {
+  width: auto;
+}
+
+.main-details-row .company {
+  margin-left: 12px;
+  font-size: 1.2rem;
+}
+
+.more-button {
+  display: block;
+  width: 110px;
+  height: 38px;
+  background-color: #3081C9;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.24);
+  border-radius: 2px;
+  margin: 30px auto 103px;
+  text-align: center;
+  line-height: 38px;
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+.more-button:hover {
+  background-color: #59a7e6;
+  color: #fff;
 }
