@@ -4,7 +4,7 @@ html {
 }
 
 body {
-  color: #3B3B3B;
+  color: #3b3b3b;
   font-size: 1.4rem;
   font-family: "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
 }
@@ -79,7 +79,6 @@ a:active {
   width: 316px;
   background-color: #345584;
   text-align: center;
-  vertical-align: top;
   border-radius: 4px;
   margin-left: 26px;
   margin-right: 11px;
@@ -134,7 +133,7 @@ a:active {
 
 .search-box .search-button {
   display: inline-block;
-  background: #3081C9 url(./images/common/icon_search.svg) no-repeat scroll 6px 6px;
+  background: #3081c9 url(./images/common/icon_search.svg) no-repeat scroll 6px 6px;
   background-size: 17px 17px;
   height: 30px;
   width: 30px;
@@ -213,10 +212,115 @@ a:active {
 
 .category-header .category-item a {
   font-size: 1.3rem;
-  color: #294C7A;
+  color: #294c7a;
 }
 
 .category-header .category-item.active a,
 .category-header .category-item a:hover {
   font-weight: bold;
+}
+
+.ranking {
+  display: flex;
+  width: 100%;
+  height: 263px;
+  background-color: #f2f2f2;
+  justify-content: center;
+  align-items: center;
+}
+
+.ranking .ranking-box {
+  position: relative;
+  width: 181px;
+  height: 218px;
+  background-color: #fff;
+  margin: 0 4px;
+}
+
+.ranking .ranking-number {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 24px;
+  height: 24px;
+  background-color: #294c7a;
+  font-size: 1.7rem;
+  font-family: Roboto;
+  font-style: italic;
+  font-weight: bold;
+  color: #fff;
+  padding-left: 4px;
+  padding-right: 4px;
+  line-height: 24px;
+}
+
+.ranking .ranking-img {
+  display: block;
+  width: 181px;
+  height: 100px;
+  object-fit: fill;
+}
+
+.ranking .ranking-content {
+  display: block;
+  width: 100%;
+  height: 118px;
+  /* background-color: #3081c9; */
+  padding: 9px 10px;
+}
+
+.ranking .ranking-content .ranking-content-frame {
+  display: block;
+  width: 161px;
+  height: 101px;
+  color: #a2a2a2;
+}
+
+.ranking-content-frame .ranking-text {
+  display: -webkit-box;
+  width: 100%;
+  height: 58px;
+  color: #3b3b3b;
+  font-size: 1.3rem;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+  line-height: 19px;
+  transition: color 0.3s ease-in-out;
+}
+
+.ranking-box:hover .ranking-content-frame .ranking-text {
+  text-decoration: underline;
+  color: #3081c9;
+}
+
+.ranking-content-frame .ranking-datetime {
+  display: flex;
+  width: 100%;
+  height: 14px;
+}
+
+.ranking-content-frame .ranking-datetime img {
+  display: block;
+  width: 13px;
+  height: 13px;
+  margin-right: 5px;
+}
+
+.ranking-content-frame .ranking-datetime p {
+  font-size: 1.2rem;
+}
+
+.ranking-content-frame .ranking-company {
+  font-size: 1.3rem;
+  margin-top: 3px;
+}
+
+.ranking-company a:hover {
+  color: #3b3b3b;
+}
+
+.ranking-content-frame .ranking-pv {
+  font-size: 1.3rem;
+  margin-top: 4px;
 }
