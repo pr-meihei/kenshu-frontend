@@ -435,8 +435,12 @@ a:active {
 .sidemenu .keyword {
   display: flex;
   width: 309px;
+  /* ↓マジックナンバーにしない方が良さそう */
+  height: 73px;
   margin: 40px auto 0;
   flex-wrap: wrap;
+  align-content: flex-start;
+  border-bottom: 1px solid #e4e4e4;
 }
 
 .sidemenu .keyword .keyword-box {
@@ -451,7 +455,19 @@ a:active {
   border-radius: 11px;
 }
 
+.sidemenu .keyword .keyword-box:hover {
+  text-stroke: 1px #3b3b3b;
+  -webkit-text-stroke: 1px #3b3b3b;
+}
+
 .keyword .keyword-box.keyword-more {
   background-color: #FFFFFF;
   border: 1px solid #F1F1F1;
+  line-height: 21px;
+}
+
+.sidemenu .keyword .keyword-box.keyword-more:hover {
+  text-stroke: 0px;
+  -webkit-text-stroke: 0px;
+  color: #3081C9;
 }
