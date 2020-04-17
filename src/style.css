@@ -333,10 +333,11 @@ a:active {
 }
 
 .main-content-wrapper {
-  display: block;
+  display: flex;
   width: 1126px;
   height: 803px;
   margin: 40px auto 0;
+  justify-content: space-between;
 }
 
 .main-frame {
@@ -418,4 +419,39 @@ a:active {
 .more-button:hover {
   background-color: #59a7e6;
   color: #fff;
+}
+
+.sidemenu {
+  width: 312px;
+}
+
+.header3 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #3b3b3b;
+  line-height: 27px;
+}
+
+.sidemenu .keyword {
+  display: flex;
+  width: 309px;
+  margin: 40px auto 0;
+  flex-wrap: wrap;
+}
+
+.sidemenu .keyword .keyword-box {
+  background-color: #f1f1f1;
+  display: block;
+  height: 22px;
+  margin: 0 5px 9px;
+  padding: 0 8px;
+  font-size: 1.2rem;
+  color: #3b3b3b;
+  line-height: 22px;
+  border-radius: 11px;
+}
+
+.keyword .keyword-box.keyword-more {
+  background-color: #FFFFFF;
+  border: 1px solid #F1F1F1;
 }
