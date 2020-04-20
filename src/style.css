@@ -258,7 +258,7 @@ a:active {
   display: block;
   width: 181px;
   height: 100px;
-  object-fit: fill;
+  object-fit: cover;
 }
 
 .ranking .ranking-content {
