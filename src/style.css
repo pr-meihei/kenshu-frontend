@@ -23,6 +23,11 @@ a:active {
   text-decoration: none;
 }
 
+
+/* ================= *
+ *  main-header      *
+ * ================= */
+
 .header {
   background-color: #24436F;
 }
@@ -38,17 +43,16 @@ a:active {
   display: flex;
   height: 30px;
   width: 1126px;
-  font-size: 0px;
 }
 
-.header-small-container .logo {
+.logo {
   display: flex;
   height: 30px;
   width: 485px;
   align-items: center;
 }
 
-.header-small-container .logo a {
+.logo a {
   display: block;
   width: 122px;
   height: 22px;
@@ -58,19 +62,17 @@ a:active {
   white-space: nowrap;
 }
 
-.header-small-container .logo .logo-text {
+.logo .logo-text {
   display: block;
   height: 30px;
   width: 335px;
   margin-left: 18px;
   margin-right: 10px;
-}
-
-.header-small-container .logo .logo-text p {
-  position: relative;
   font-size: 1.2rem;
   color: #BFC9D7;
   line-height: 30px;
+  font-weight: normal;
+  white-space: 0;
 }
 
 .header-small-container .release {
@@ -82,17 +84,19 @@ a:active {
   border-radius: 4px;
   margin-left: 26px;
   margin-right: 11px;
-}
-
-.release {
-  display: block;
-  height: 14px;
-  padding: 9px 15px 8px;
+  padding: 0 15px;
 }
 
 .release ul {
   display: flex;
   justify-content: space-between;
+  height: 100%;
+  align-items: center;
+  list-style: none;
+}
+
+.release .release-item {
+  height: 14px;
 }
 
 .release .release-item+li {
@@ -103,18 +107,18 @@ a:active {
 .release .release-item a {
   font-size: 1.3rem;
   color: #fff;
-  line-height: 14px;
 }
 
 .release .release-item a:hover {
   border-bottom: 1px solid #fff;
 }
 
-.keyword {
+.keyword-search {
   display: block;
   height: 30px;
   width: 288px;
   text-align: center;
+  font-size: 0;
 }
 
 .search-box .search-input {
@@ -191,6 +195,11 @@ a:active {
   line-height: 13px;
 }
 
+
+/* ================= *
+ *  category-header  *
+ * ================= */
+
 .category-header {
   display: block;
   height: 36px;
@@ -220,7 +229,18 @@ a:active {
   font-weight: bold;
 }
 
-.ranking {
+
+/* ================= *
+ *  ranking          *
+ * ================= */
+
+
+/*
+.ranking-heading {
+  display: none;
+} */
+
+.ranking ol {
   display: flex;
   width: 100%;
   height: 263px;
@@ -229,15 +249,19 @@ a:active {
   align-items: center;
 }
 
-.ranking .ranking-box {
+.ranking li {
+  margin: 0 4px;
+  list-style: none;
+}
+
+.ranking-box {
   position: relative;
   width: 181px;
   height: 218px;
   background-color: #fff;
-  margin: 0 4px;
 }
 
-.ranking .ranking-number {
+.ranking-number {
   position: absolute;
   top: 0;
   left: 0;
@@ -252,33 +276,30 @@ a:active {
   padding-left: 4px;
   padding-right: 4px;
   line-height: 24px;
+  z-index: 1;
 }
 
-.ranking .ranking-img {
+.ranking-img {
+  position: absolute;
   display: block;
+  left: 0;
   width: 181px;
   height: 100px;
-  object-fit: fill;
+  object-fit: cover;
 }
 
-.ranking .ranking-content {
-  display: block;
+a.ranking-title {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
-  height: 118px;
-  /* background-color: #3081c9; */
-  padding: 9px 10px;
+  height: 100%;
+  padding: 109px 10px 0;
 }
 
-.ranking .ranking-content .ranking-content-frame {
-  display: block;
-  width: 161px;
-  height: 101px;
-  color: #a2a2a2;
-}
-
-.ranking-content-frame .ranking-text {
+.title-text {
   display: -webkit-box;
-  width: 100%;
+  width: 161px;
   height: 58px;
   color: #3b3b3b;
   font-size: 1.3rem;
@@ -287,32 +308,43 @@ a:active {
   overflow: hidden;
   line-height: 19px;
   transition: color 0.3s ease-in-out;
+  z-index: 2;
 }
 
-.ranking-box:hover .ranking-content-frame .ranking-text {
+a.ranking-title:hover .title-text {
   text-decoration: underline;
   color: #3081c9;
 }
 
-.datetime {
-  display: flex;
-  width: 100%;
-  height: 14px;
+.ranking-details {
+  position: absolute;
+  display: block;
+  width: 161px;
+  height: 118px;
+  top: 169px;
+  left: 10px;
   color: #a2a2a2;
 }
 
-.datetime img {
+.datetime {
   display: block;
+  width: 100%;
+  height: 14px;
+  font-size: 1.2rem;
+  color: #a2a2a2;
+}
+
+time.datetime::before {
+  display: inline-block;
+  content: '';
+  background-image: url("../src/images/common/icon_time.svg");
   width: 13px;
   height: 13px;
   margin-right: 5px;
+  vertical-align: -2px;
 }
 
-.datetime p {
-  font-size: 1.2rem;
-}
-
-.ranking-content-frame .company {
+.ranking-details .company {
   font-size: 1.3rem;
   margin-top: 3px;
 }
@@ -321,10 +353,15 @@ a:active {
   color: #3b3b3b;
 }
 
-.ranking-content-frame .ranking-pv {
+.ranking-pv {
   font-size: 1.3rem;
   margin-top: 4px;
 }
+
+
+/* ================= *
+ *  main             *
+ * ================= */
 
 .heading-2 {
   margin: 0 0 35px;
@@ -332,7 +369,7 @@ a:active {
   font-weight: bold;
 }
 
-.main-content-wrapper {
+.main {
   display: flex;
   width: 1126px;
   height: 803px;
@@ -340,30 +377,33 @@ a:active {
   justify-content: space-between;
 }
 
-.main-frame {
+.main-container {
   display: flex;
   width: 778px;
   justify-content: space-between;
   flex-wrap: wrap;
 }
 
-.main-box {
+.main-article-box {
+  position: relative;
   display: block;
   width: 380px;
   height: 118px;
   border-bottom: 1px solid #e4e4e4;
+  /* background-color: aqua; */
 }
 
-.main-box .main-row {
-  display: flex;
+a.main-article-title {
+  display: block;
   width: 100%;
-  height: 66px;
-  margin-top: 15px;
-  justify-content: space-between;
+  height: 100%;
+  z-index: 1;
 }
 
-.main-row .main-text {
+.main-article-title h3 {
+  position: absolute;
   display: -webkit-box;
+  top: 15px;
   width: 265px;
   height: 66px;
   color: #3b3b3b;
@@ -376,27 +416,34 @@ a:active {
   transition: color 0.3s ease-in-out;
 }
 
-.main-box:hover .main-row .main-text {
+.main-article-title:hover h3 {
   text-decoration: underline;
   color: #3081c9;
 }
 
-.main-box .main-img {
+.main-img {
+  position: absolute;
   display: block;
   width: 100px;
   height: 66px;
+  top: 15px;
+  left: 280px;
 }
 
-.main-box .main-details-row {
+.main-article-details {
+  position: absolute;
   display: flex;
-  margin-top: 4px;
+  height: 13px;
+  width: auto;
+  top: 88px;
+  z-index: 0;
 }
 
-.main-details-row .datetime {
+.main-article-details .datetime {
   width: auto;
 }
 
-.main-details-row .company {
+.main-article-details .company {
   margin-left: 12px;
   font-size: 1.2rem;
 }
@@ -421,29 +468,37 @@ a:active {
   color: #fff;
 }
 
+.more-button:focus {
+  outline: none;
+}
+
 .sidemenu {
   width: 312px;
 }
 
-.heading-3 {
+.seide-heading-2 {
   font-size: 1.8rem;
   font-weight: bold;
   color: #3b3b3b;
   line-height: 27px;
 }
 
-.sidemenu .keyword {
-  display: flex;
+.keyword {
+  display: block;
   width: 309px;
-  /* ↓マジックナンバーにしない方が良さそう */
-  height: 73px;
+  height: auto;
   margin: 40px auto 0;
-  flex-wrap: wrap;
-  align-content: flex-start;
+  padding-bottom: 11px;
   border-bottom: 1px solid #e4e4e4;
 }
 
-.sidemenu .keyword .keyword-box {
+.keyword ul {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+}
+
+.keyword-box {
   background-color: #f1f1f1;
   display: block;
   height: 22px;
@@ -455,19 +510,24 @@ a:active {
   border-radius: 11px;
 }
 
-.sidemenu .keyword .keyword-box:hover {
+.keyword-box:hover a {
   color: #000000;
 }
 
-.keyword .keyword-box.keyword-more {
+.keyword-box.keyword-more {
   background-color: #FFFFFF;
   border: 1px solid #F1F1F1;
   line-height: 21px;
 }
 
-.sidemenu .keyword .keyword-box.keyword-more:hover {
+.keyword-box.keyword-more:hover a {
   color: #3081C9;
 }
+
+
+/* ================= *
+ *  footer           *
+ * ================= */
 
 .footer {
   background-color: #fafafa;
@@ -532,14 +592,15 @@ a:active {
   border-bottom: 1px solid #3b3b3b;
 }
 
-.footer-content .footer-term {
+.footer-content .footer-term ul {
   display: flex;
   height: 46px;
   padding-top: 16px;
   padding-bottom: 18px;
+  list-style: none;
 }
 
-.footer-content .footer-term p {
+.footer-content .footer-term li {
   margin-right: 10px;
   font-size: 1.2rem;
 }
