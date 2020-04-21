@@ -113,7 +113,7 @@ a:active {
   border-bottom: 1px solid #fff;
 }
 
-.keyword {
+.keyword-search {
   display: block;
   height: 30px;
   width: 288px;
@@ -468,6 +468,10 @@ a.main-article-title {
   color: #fff;
 }
 
+.more-button:focus {
+  outline: none;
+}
+
 .sidemenu {
   width: 312px;
 }
@@ -479,18 +483,22 @@ a.main-article-title {
   line-height: 27px;
 }
 
-.sidemenu .keyword {
-  display: flex;
+.keyword {
+  display: block;
   width: 309px;
   height: auto;
   margin: 40px auto 0;
-  flex-wrap: wrap;
-  align-content: flex-start;
   padding-bottom: 11px;
   border-bottom: 1px solid #e4e4e4;
 }
 
-.sidemenu .keyword .keyword-box {
+.keyword ul {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+}
+
+.keyword-box {
   background-color: #f1f1f1;
   display: block;
   height: 22px;
@@ -502,19 +510,24 @@ a.main-article-title {
   border-radius: 11px;
 }
 
-.sidemenu .keyword .keyword-box:hover {
+.keyword-box:hover a {
   color: #000000;
 }
 
-.keyword .keyword-box.keyword-more {
+.keyword-box.keyword-more {
   background-color: #FFFFFF;
   border: 1px solid #F1F1F1;
   line-height: 21px;
 }
 
-.sidemenu .keyword .keyword-box.keyword-more:hover {
+.keyword-box.keyword-more:hover a {
   color: #3081C9;
 }
+
+
+/* ================= *
+ *  footer           *
+ * ================= */
 
 .footer {
   background-color: #fafafa;
@@ -579,14 +592,15 @@ a.main-article-title {
   border-bottom: 1px solid #3b3b3b;
 }
 
-.footer-content .footer-term {
+.footer-content .footer-term ul {
   display: flex;
   height: 46px;
   padding-top: 16px;
   padding-bottom: 18px;
+  list-style: none;
 }
 
-.footer-content .footer-term p {
+.footer-content .footer-term li {
   margin-right: 10px;
   font-size: 1.2rem;
 }
