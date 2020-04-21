@@ -23,6 +23,11 @@ a:active {
   text-decoration: none;
 }
 
+
+/* ================= *
+ *  main-header      *
+ * ================= */
+
 .header {
   background-color: #24436F;
 }
@@ -190,6 +195,11 @@ a:active {
   line-height: 13px;
 }
 
+
+/* ================= *
+ *  category-header  *
+ * ================= */
+
 .category-header {
   display: block;
   height: 36px;
@@ -219,7 +229,12 @@ a:active {
   font-weight: bold;
 }
 
-.ranking {
+
+/* ================= *
+ *  ranking          *
+ * ================= */
+
+.ranking ol {
   display: flex;
   width: 100%;
   height: 263px;
@@ -228,15 +243,19 @@ a:active {
   align-items: center;
 }
 
-.ranking .ranking-box {
+.ranking li {
+  margin: 0 4px;
+  list-style: none;
+}
+
+.ranking-box {
   position: relative;
   width: 181px;
   height: 218px;
   background-color: #fff;
-  margin: 0 4px;
 }
 
-.ranking .ranking-number {
+.ranking-number {
   position: absolute;
   top: 0;
   left: 0;
@@ -251,33 +270,30 @@ a:active {
   padding-left: 4px;
   padding-right: 4px;
   line-height: 24px;
+  z-index: 1;
 }
 
-.ranking .ranking-img {
+.ranking-img {
+  position: absolute;
   display: block;
+  left: 0;
   width: 181px;
   height: 100px;
   object-fit: cover;
 }
 
-.ranking .ranking-content {
-  display: block;
+a.ranking-title {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
-  height: 118px;
-  /* background-color: #3081c9; */
-  padding: 9px 10px;
+  height: 100%;
+  padding: 109px 10px 0;
 }
 
-.ranking .ranking-content .ranking-content-frame {
-  display: block;
-  width: 161px;
-  height: 101px;
-  color: #a2a2a2;
-}
-
-.ranking-content-frame .ranking-text {
+.title-text {
   display: -webkit-box;
-  width: 100%;
+  width: 161px;
   height: 58px;
   color: #3b3b3b;
   font-size: 1.3rem;
@@ -286,32 +302,42 @@ a:active {
   overflow: hidden;
   line-height: 19px;
   transition: color 0.3s ease-in-out;
+  z-index: 2;
 }
 
-.ranking-box:hover .ranking-content-frame .ranking-text {
+a.ranking-title:hover .title-text {
   text-decoration: underline;
   color: #3081c9;
 }
 
-.datetime {
-  display: flex;
-  width: 100%;
-  height: 14px;
+.ranking-conteiner {
+  position: absolute;
+  display: block;
+  width: 161px;
+  height: 118px;
+  top: 169px;
+  left: 10px;
   color: #a2a2a2;
 }
 
-.datetime img {
+.datetime {
   display: block;
-  width: 13px;
-  height: 13px;
-  margin-right: 5px;
-}
-
-.datetime p {
+  width: 100%;
+  height: 14px;
   font-size: 1.2rem;
 }
 
-.ranking-content-frame .company {
+time.datetime::before {
+  display: inline-block;
+  content: '';
+  background-image: url("../src/images/common/icon_time.svg");
+  width: 13px;
+  height: 13px;
+  margin-right: 5px;
+  vertical-align: -2px;
+}
+
+.ranking-conteiner .company {
   font-size: 1.3rem;
   margin-top: 3px;
 }
@@ -320,10 +346,15 @@ a:active {
   color: #3b3b3b;
 }
 
-.ranking-content-frame .ranking-pv {
+.ranking-pv {
   font-size: 1.3rem;
   margin-top: 4px;
 }
+
+
+/* ================= *
+ *  main             *
+ * ================= */
 
 .heading-2 {
   margin: 0 0 35px;
