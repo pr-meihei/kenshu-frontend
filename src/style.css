@@ -234,6 +234,12 @@ a:active {
  *  ranking          *
  * ================= */
 
+
+/*
+.ranking-heading {
+  display: none;
+} */
+
 .ranking ol {
   display: flex;
   width: 100%;
@@ -310,7 +316,7 @@ a.ranking-title:hover .title-text {
   color: #3081c9;
 }
 
-.ranking-conteiner {
+.ranking-details {
   position: absolute;
   display: block;
   width: 161px;
@@ -325,6 +331,7 @@ a.ranking-title:hover .title-text {
   width: 100%;
   height: 14px;
   font-size: 1.2rem;
+  color: #a2a2a2;
 }
 
 time.datetime::before {
@@ -337,7 +344,7 @@ time.datetime::before {
   vertical-align: -2px;
 }
 
-.ranking-conteiner .company {
+.ranking-details .company {
   font-size: 1.3rem;
   margin-top: 3px;
 }
@@ -362,7 +369,7 @@ time.datetime::before {
   font-weight: bold;
 }
 
-.main-content-wrapper {
+.main {
   display: flex;
   width: 1126px;
   height: 803px;
@@ -370,30 +377,33 @@ time.datetime::before {
   justify-content: space-between;
 }
 
-.main-frame {
+.main-container {
   display: flex;
   width: 778px;
   justify-content: space-between;
   flex-wrap: wrap;
 }
 
-.main-box {
+.main-article-box {
+  position: relative;
   display: block;
   width: 380px;
   height: 118px;
   border-bottom: 1px solid #e4e4e4;
+  /* background-color: aqua; */
 }
 
-.main-box .main-row {
-  display: flex;
+a.main-article-title {
+  display: block;
   width: 100%;
-  height: 66px;
-  margin-top: 15px;
-  justify-content: space-between;
+  height: 100%;
+  z-index: 1;
 }
 
-.main-row .main-text {
+.main-article-title h3 {
+  position: absolute;
   display: -webkit-box;
+  top: 15px;
   width: 265px;
   height: 66px;
   color: #3b3b3b;
@@ -406,32 +416,39 @@ time.datetime::before {
   transition: color 0.3s ease-in-out;
 }
 
-.main-box:hover .main-row .main-text {
+.main-article-title:hover h3 {
   text-decoration: underline;
   color: #3081c9;
 }
 
-.main-box .main-img {
+.main-img {
+  position: absolute;
   display: block;
   width: 100px;
   height: 66px;
+  top: 15px;
+  left: 280px;
 }
 
-.main-box .main-details-row {
+.main-article-details {
+  position: absolute;
   display: flex;
-  margin-top: 4px;
+  height: 13px;
+  width: auto;
+  top: 88px;
+  z-index: 0;
 }
 
-.main-details-row .datetime {
+.main-article-details .datetime {
   width: auto;
 }
 
-.main-details-row .company {
+.main-article-details .company {
   margin-left: 12px;
   font-size: 1.2rem;
 }
 
-a.more-button {
+.more-button {
   display: block;
   width: 110px;
   height: 38px;
@@ -455,7 +472,7 @@ a.more-button {
   width: 312px;
 }
 
-.heading-3 {
+.seide-heading-2 {
   font-size: 1.8rem;
   font-weight: bold;
   color: #3b3b3b;
