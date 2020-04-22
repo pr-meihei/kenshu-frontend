@@ -1,0 +1,25 @@
+{
+    "name": "kenshu-frontend",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/pr-meihei/kenshu-frontend.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/pr-meihei/kenshu-frontend/issues"
+    },
+    "homepage": "https://github.com/pr-meihei/kenshu-frontend#readme",
+    "devDependencies": {
+        "gulp": "^4.0.2",
+        "gulp-sass": "^4.0.2",
+        "gulp-sourcemaps": "^2.6.5"
+    }
+}
