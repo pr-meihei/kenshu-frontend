@@ -1,0 +1,25 @@
+/* ====== mixin ===== */
+
+@mixin datetime-img{
+  display: inline-block;
+  width: 13px;
+  height: 13px;
+  margin-right: 5px;
+  vertical-align: -2px;
+  content: '';
+  background-image: url(../images/common/icon_time.svg);
+}
+
+@mixin number-box-24 ($col: $text-white, $bg-col: $text-blue-2) {
+  width: 24px;
+  height: 24px;
+  padding-right: 4px;
+  padding-left: 4px;
+  font-family: Roboto;
+  font-size: 1.7rem;
+  font-style: italic;
+  font-weight: bold;
+  line-height: 24px;
+  color: $col;
+  background-color: $bg-col;
+}

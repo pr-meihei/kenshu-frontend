@@ -1,0 +1,27 @@
+/* ====== ranking-article block ===== */
+
+.ranking-article {
+  position: relative;
+  width: 181px;
+  height: 218px;
+  background-color: $bg-white-1;
+
+  &__number {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 24px;
+    height: 24px;
+    @include number-box-24;
+  }
+
+  &__img {
+    position: absolute;
+    left: 0;
+    display: block;
+    width: 181px;
+    height: 100px;
+    object-fit: cover;
+  }
+}

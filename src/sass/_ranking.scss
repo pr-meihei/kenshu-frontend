@@ -1,0 +1,21 @@
+/* ====== ranking block ===== */
+
+.ranking {
+  // &__heading {
+  //   display: none;
+  // }
+
+  &__order {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 263px;
+    background-color: $bg-white-2;
+  }
+
+  &__item {
+    margin: 0 4px;
+    list-style: none;
+  }
+}

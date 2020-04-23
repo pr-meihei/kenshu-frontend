@@ -3,6 +3,7 @@
 /* ベース */
 @import 'variables.scss';
 @import 'base.scss';
+@import 'mixin.scss';
 
 /* ヘッダー */
 @import 'header.scss';
@@ -15,134 +16,11 @@
 @import 'category-header.scss';
 
 /* ランキング */
-
-
-/*
-.ranking-heading {
-  display: none;
-} */
-
-.ranking {
-  ol {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 263px;
-    background-color: $bg-white-2;
-  }
-
-  li {
-    margin: 0 4px;
-    list-style: none;
-  }
-
-  &-box {
-    position: relative;
-    width: 181px;
-    height: 218px;
-    background-color: $bg-white-1;
-
-    a.ranking-title {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      padding: 109px 10px 0;
-
-      .title-text {
-        z-index: 2;
-        display: -webkit-box;
-        width: 161px;
-        height: 58px;
-        overflow: hidden;
-        font-size: 1.3rem;
-        line-height: 19px;
-        color: $text-black;
-        transition: color .3s ease-in-out;
-        -webkit-box-orient: vertical;
-        -webkit-line-clamp: 3;
-      }
-
-      &:hover {
-        .title-text {
-          color: $text-blue-1;
-          text-decoration: underline;
-        }
-      }
-    }
-  }
-
-  &-number {
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 1;
-    width: 24px;
-    height: 24px;
-    padding-right: 4px;
-    padding-left: 4px;
-    font-family: Roboto;
-    font-size: 1.7rem;
-    font-style: italic;
-    font-weight: bold;
-    line-height: 24px;
-    color: $text-white;
-    background-color: $text-blue-2;
-  }
-
-  &-img {
-    position: absolute;
-    left: 0;
-    display: block;
-    width: 181px;
-    height: 100px;
-    object-fit: cover;
-  }
-
-  &-details {
-    position: absolute;
-    top: 169px;
-    left: 10px;
-    display: block;
-    width: 161px;
-    height: 118px;
-    color: $text-gray-3;
-
-    .company {
-      margin-top: 3px;
-      font-size: 1.3rem;
-    }
-  }
-
-  &-pv {
-    margin-top: 4px;
-    font-size: 1.3rem;
-  }
-}
-
-.datetime {
-  display: block;
-  width: 100%;
-  height: 14px;
-  font-size: 1.2rem;
-  color: $text-gray-3;
-}
-
-time.datetime::before {
-  display: inline-block;
-  width: 13px;
-  height: 13px;
-  margin-right: 5px;
-  vertical-align: -2px;
-  content: '';
-  background-image: url('../images/common/icon_time.svg');
-}
-
-.company a:hover {
-  color: $text-black;
-}
+@import 'ranking-details.scss';
+@import 'ranking.scss';
+@import 'ranking-article.scss';
+@import 'ranking-title.scss';
+@import 'ranking-details.scss';
 
 /* ================= *
  *  main             *
