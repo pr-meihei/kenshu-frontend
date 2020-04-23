@@ -1,0 +1,36 @@
+/* ====== category-header block ===== */
+
+.category-header {
+  $block: &;
+  background-color: $bg-white-1;
+  border-bottom: 1px solid $border-gray-2;
+
+  &__list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 837px;
+    height: 36px;
+    margin: 0 auto;
+  }
+
+  %__item {
+    font-size: 1.3rem;
+    color: $text-blue-2;
+  }
+
+  &__item {
+    @extend %__item;
+
+    &--active {
+      @extend %__item;
+      font-weight: bold;
+    }
+  }
+
+  &__link {
+    &:hover {
+      font-weight: bold;
+    }
+  }
+}
