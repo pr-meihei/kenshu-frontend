@@ -1,0 +1,35 @@
+/* ====== lib-button ===== */
+
+@mixin button ($width, $height) {
+  /*
+  ボタンを作成するmixin。中の文字は1行でなければいけない。
+   */
+  display: block;
+  width: if($width, $width, 110px);
+  height: if($height, $height, 38px);
+  font-size: 1.4rem;
+  font-weight: bold;
+  line-height: if($height, $height, 38px);
+  text-align: center;
+  border-radius: 2px;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, .24);
+
+  &:focus {
+    outline: none;
+  }
+}
+
+@mixin color-btn($width, $height, $col, $bg-col, $hover-bg-col) {
+  @include button($width, $height);
+  color: $col;
+  background-color: $bg-col;
+
+  &:hover {
+    color: $col;
+    background-color: $hover-bg-col;
+  }
+}
+
+.blue-btn {
+  @include color-btn(null, null, $text-white, $bg-blue-1, $bg-lightblue);
+}

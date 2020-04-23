@@ -1,0 +1,126 @@
+@charset "UTF-8";
+
+/* ベース */
+@import 'variables.scss';
+@import 'base.scss';
+
+/* lib */
+@import 'mixin.scss';
+@import './lib/button.scss';
+
+/* ヘッダー */
+@import 'header.scss';
+@import 'logo.scss';
+@import 'release.scss';
+@import 'search.scss';
+@import 'header-nav.scss';
+
+/* カテゴリーヘッダー */
+@import 'category-header.scss';
+
+/* ランキング */
+@import 'ranking-details.scss';
+@import 'ranking.scss';
+@import 'ranking-article.scss';
+@import 'ranking-title.scss';
+
+/* メイン */
+@import 'main.scss';
+@import 'main-article.scss';
+@import 'main-title.scss';
+@import 'main-details.scss';
+@import 'sidemenu.scss';
+@import 'tag-cloud.scss';
+
+/* ================= *
+ *  footer           *
+ * ================= */
+
+.footer {
+  padding-top: 60px;
+  background-color: $bg-gray-1;
+
+  &-content {
+    display: block;
+    width: 1125px;
+    height: 296px;
+    margin: 0 auto;
+    color: $text-gray-4;
+  }
+
+  &-list-row {
+    display: flex;
+    height: 230px;
+    border-bottom: 1px solid $border-gray-5;
+  }
+
+  &-list {
+    width: 25%;
+    height: 210px;
+  }
+
+  &-heading-4 {
+    margin-bottom: 18px;
+    font-size: 1.3rem;
+    font-weight: normal;
+    color: $text-black;
+  }
+
+  &-list-items {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 100%;
+    padding-bottom: 19px;
+    list-style: none;
+
+    li {
+      margin-bottom: 18px;
+    }
+
+    a {
+      font-size: 1.2rem;
+      color: $text-gray-4;
+
+      &:hover {
+        color: $text-black;
+        border-bottom: 1px solid $text-black;
+      }
+    }
+  }
+
+  &-items-box {
+    height: 1.2rem;
+    margin-bottom: 18px;
+  }
+
+  .footer-term {
+    ul {
+      display: flex;
+      height: 46px;
+      padding-top: 16px;
+      padding-bottom: 18px;
+      list-style: none;
+    }
+
+    li {
+      margin-right: 10px;
+      font-size: 1.2rem;
+    }
+
+    a {
+      &:hover {
+        color: $text-black;
+        border-bottom: 1px solid $text-black;
+      }
+    }
+  }
+}
+
+.flx2 {
+  width: 50%;
+}
+
+.copyright {
+  font-size: 1.1rem;
+}

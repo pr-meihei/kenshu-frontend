@@ -1,0 +1,30 @@
+/* ====== main-details block ===== */
+
+.main-details {
+  position: absolute;
+  top: 88px;
+  z-index: 0;
+  display: flex;
+  width: auto;
+  height: 13px;
+  font-size: 1.2rem;
+  color: $text-gray-3;
+
+  &__datetime {
+    width: auto;
+
+    &::before{
+      @include datetime-img;
+    }
+  }
+
+  &__company {
+    margin-left: 12px;
+  }
+
+  &__company-link {
+    &:hover{
+      color: $text-black;
+    }
+  }
+}

@@ -1,0 +1,12 @@
+/* ====== sidemenu block ===== */
+
+.sidemenu {
+  width: 312px;
+
+  &__heading-2 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    line-height: 27px;
+    color: $text-black;
+  }
+}
