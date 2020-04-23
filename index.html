@@ -15,36 +15,47 @@
 
 <body>
   <header class="header">
-    <div class="header-container">
-      <div class="header-small-container">
+    <div class="header__container">
+      <div class="header__small-container">
         <div class="logo">
-          <a href="#">PR TIMES</a>
-          <h1 class="logo-text">プレスリリース・ニュースリリース配信サービスのPR TIMES</h1>
+          <a class="logo__img-link" href="#">PR TIMES</a>
+          <h1 class="logo__heading-1">プレスリリース・ニュースリリース配信サービスのPR TIMES</h1>
         </div>
         <div class="release">
-          <ul>
-            <li class="release-item">
-              <a href="#">プレスリリースを受信</a></li>
-            <li class="release-item">
-              <a href="#">配信を依頼</a></li>
-            <li class="release-item">
-              <a href="#">ログイン</a></li>
+          <ul class="release__list">
+            <li class="release__item">
+              <a class="release__link" href="#">プレスリリースを受信</a>
+            </li>
+            <li class="release__item">
+              <a class="release__link" href="#">配信を依頼</a>
+            </li>
+            <li class="release__item">
+              <a class="release__link" href="#">ログイン</a>
+            </li>
           </ul>
         </div>
-        <div class="keyword-search">
-          <form class="search-box">
-            <input class="search-input" type="text" name="search" placeholder="キーワードで検索">
-            <input class="search-button" type="submit" value="">
+        <div class="search">
+          <form class="search__form">
+            <input class="search__input" type="text" name="search" placeholder="キーワードで検索">
+            <input class="search__button" type="submit" value="">
           </form>
         </div>
       </div>
-      <nav class="main-header">
-        <ul>
-          <li class="header-item active"><a href="#">プレスリリース</a></li>
-          <li class="header-item"><a href="#">ランキング</a></li>
-          <li class="header-item"><a href="#">TV</a></li>
-        </ul>
-      </nav>
+      <div class="header__nav-container">
+        <nav class="header-nav">
+          <ul class="header-nav__list">
+            <li class="header-nav__item--active">
+              <a class="header-nav__link" href="#">プレスリリース</a>
+            </li>
+            <li class="header-nav__item">
+              <a class="header-nav__link" href="#">ランキング</a>
+            </li>
+            <li class="header-nav__item">
+              <a class="header-nav__link" href="#">TV</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </div>
   </header>
 

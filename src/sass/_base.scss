@@ -1,0 +1,38 @@
+/* ====== base block ===== */
+
+html {
+  font-family: $font-base;
+  font-size: 62.5%;
+  color: $text-black;
+}
+
+*{
+  box-sizing: border-box;
+
+  *::before{
+    box-sizing: border-box;
+  }
+  *::after {
+    box-sizing: border-box;
+  }
+}
+
+a {
+  color: inherit;
+
+  &:hover {
+    text-decoration: none;
+  }
+
+  &:link {
+    text-decoration: none;
+  }
+
+  &:visited {
+    text-decoration: none;
+  }
+
+  &:active {
+    text-decoration: none;
+  }
+}

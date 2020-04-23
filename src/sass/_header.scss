@@ -1,0 +1,25 @@
+/* ====== header block ===== */
+
+.header {
+  background-color: $bg-blue-4;
+
+  &__container {
+    width: 1126px;
+    height: 75px;
+    padding-top: 13px;
+    margin: 0 auto;
+  }
+
+  &__small-container {
+    display: flex;
+    width: 1126px;
+    height: 30px;
+  }
+
+  &__nav-container {
+    display: block;
+    width: 1125px;
+    height: 32px;
+    padding: 9px 0 10px;
+  }
+}
