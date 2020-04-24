@@ -1,0 +1,38 @@
+/* ====== ranking-details block ===== */
+
+.ranking-details {
+  position: absolute;
+  top: 169px;
+  left: 10px;
+  display: block;
+  width: 161px;
+  color: $gray;
+
+  &__datetime {
+    display: block;
+    width: 100%;
+    height: 14px;
+    font-size: 1.2rem;
+    color: $gray;
+
+    &::before{
+      @include datetime-img;
+    }
+  }
+
+  &__company {
+    margin-top: 3px;
+    font-size: 1.3rem;
+  }
+
+  &__company-link {
+    &:hover{
+      color: $dark-gray;
+    }
+  }
+
+  &__pv {
+    margin-top: 4px;
+    font-size: 1.3rem;
+  }
+}

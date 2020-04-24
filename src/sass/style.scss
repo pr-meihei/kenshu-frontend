@@ -1,0 +1,41 @@
+@charset "UTF-8";
+
+/* コンフィグ(CSSで消えるやつ) */
+@import './config/var.scss';
+
+/* ベース */
+@import '../css/reset';  // cssファイルも拡張子をつけなければインラインで読み込む
+@import './config/base.scss';
+
+/* lib */
+@import './config/mixin.scss';
+@import './lib/button.scss';
+
+/* ヘッダー */
+@import './blocks/header.scss';
+@import './blocks/logo.scss';
+@import './blocks/release.scss';
+@import './blocks/search.scss';
+@import './blocks/header-nav.scss';
+
+/* カテゴリーヘッダー */
+@import './blocks/category-header.scss';
+
+/* ランキング */
+@import './blocks/ranking-details.scss';
+@import './blocks/ranking.scss';
+@import './blocks/ranking-article.scss';
+@import './blocks/ranking-title.scss';
+
+/* メイン */
+@import './blocks/main.scss';
+@import './blocks/main-article.scss';
+@import './blocks/main-title.scss';
+@import './blocks/main-details.scss';
+@import './blocks/sidemenu.scss';
+@import './blocks/tag-cloud.scss';
+
+/* フッター */
+@import './blocks/footer.scss';
+@import './blocks/footer-list.scss';
+@import './blocks/footer-term.scss';

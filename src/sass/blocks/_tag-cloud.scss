@@ -1,0 +1,52 @@
+/* ====== tag-cloud block ===== */
+
+.tag-cloud {
+  $block: &;
+  display: block;
+  width: 309px;
+  height: auto;
+  padding-bottom: 11px;
+  margin: 0 auto;
+  border-bottom: 1px solid $gray-e4;
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+  }
+
+  %__box {
+    display: block;
+    height: 22px;
+    padding: 0 8px;
+    margin: 0 5px 9px;
+    font-size: 1.2rem;
+    color: $dark-gray;
+    border-radius: 11px;
+  }
+
+  &__box {
+    @extend %__box;
+    line-height: 22px;
+    background-color: $white-f1;
+
+    &:hover {
+      #{$block}__link {
+        color: $black;
+      }
+    }
+
+    &--more {
+      @extend %__box;
+      line-height: 21px;
+      background-color: $white;
+      border: 1px solid $white-f1;
+
+      &:hover {
+        #{$block}__link {
+          color: $light-blue;
+        }
+      }
+    }
+  }
+}
