@@ -13,7 +13,7 @@
     overflow: hidden;
     text-indent: 100%;
     white-space: nowrap;
-    background-image: url(../../images/common/logo_prtimes.svg);
+    @include background-image('common/logo_prtimes.svg');
   }
 
   &__heading-1 {

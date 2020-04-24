@@ -1,5 +1,8 @@
 @charset "UTF-8";
 
+// デバッグ環境の設定 ----------------------
+$debug: true;
+
 // フォント関係の設定 ----------------------
 $font-base: 'Hiragino Kaku Gothic ProN',
   Meiryo,
@@ -29,3 +32,8 @@ $border-gray-2: #e2e2e2;
 $border-gray-3: #e4e4e4;
 $border-gray-4: #f1f1f1;
 $border-gray-5: #e0e0e0;
+
+// Path関連の設定 -----------------------
+$http-path: '/kenshu-frontend/';
+$debug-path: '../../';  // './'->'sass/'; '../'->'src/'; '../../'->'workspace/';
+$img-root-path: 'src/images/';
