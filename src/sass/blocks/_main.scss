@@ -4,11 +4,14 @@
   display: flex;
   justify-content: space-between;
   width: 1126px;
-  height: 803px;
-  margin: 40px auto 0;
+  height: 843px;
+  padding-top: 40px;
+  margin: 0 auto;
 
   &__heading-2 {
-    margin: 0 0 35px;
+    display: block;
+    height: 59px;
+    padding: 0 0 35px;
     font-size: 2.4rem;
     font-weight: bold;
   }
@@ -23,7 +26,6 @@
   &__btn-container {
     display: flex;
     justify-content: center;
-    margin-top: 30px;
-    margin-bottom: 103px;
+    padding: 30px 0 103px;
   }
 }

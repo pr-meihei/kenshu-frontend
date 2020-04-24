@@ -3,9 +3,8 @@
 .main-details {
   position: absolute;
   top: 88px;
-  z-index: 0;
+  z-index: 2;
   display: flex;
-  width: auto;
   height: 13px;
   font-size: 1.2rem;
   color: $gray;

@@ -2,20 +2,20 @@
 
 .release {
   display: block;
-  width: 316px;
+  width: 353px;
   height: 30px;
-  padding: 0 15px;
-  margin: 0 11px 0 26px;
-  text-align: center;
-  background-color: $blue--1;
-  border-radius: 4px;
+  padding: 0 11px 0 26px;
 
   &__list {
     display: flex;
     align-items: center;
     justify-content: space-between;
     height: 100%;
+    padding: 0 15px;
+    text-align: center;
     list-style: none;
+    background-color: $blue--1;
+    border-radius: 4px;
   }
 
   &__item {
