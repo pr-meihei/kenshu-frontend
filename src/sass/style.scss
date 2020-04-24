@@ -1,38 +1,38 @@
 @charset "UTF-8";
 
 /* ベース */
-@import 'variables.scss';
-@import 'base.scss';
+@import './config/variables.scss';
+@import './config/base.scss';
 
 /* lib */
-@import 'mixin.scss';
+@import './config/mixin.scss';
 @import './lib/button.scss';
 
 /* ヘッダー */
-@import 'header.scss';
-@import 'logo.scss';
-@import 'release.scss';
-@import 'search.scss';
-@import 'header-nav.scss';
+@import './blocks/header.scss';
+@import './blocks/logo.scss';
+@import './blocks/release.scss';
+@import './blocks/search.scss';
+@import './blocks/header-nav.scss';
 
 /* カテゴリーヘッダー */
-@import 'category-header.scss';
+@import './blocks/category-header.scss';
 
 /* ランキング */
-@import 'ranking-details.scss';
-@import 'ranking.scss';
-@import 'ranking-article.scss';
-@import 'ranking-title.scss';
+@import './blocks/ranking-details.scss';
+@import './blocks/ranking.scss';
+@import './blocks/ranking-article.scss';
+@import './blocks/ranking-title.scss';
 
 /* メイン */
-@import 'main.scss';
-@import 'main-article.scss';
-@import 'main-title.scss';
-@import 'main-details.scss';
-@import 'sidemenu.scss';
-@import 'tag-cloud.scss';
+@import './blocks/main.scss';
+@import './blocks/main-article.scss';
+@import './blocks/main-title.scss';
+@import './blocks/main-details.scss';
+@import './blocks/sidemenu.scss';
+@import './blocks/tag-cloud.scss';
 
 /* フッター */
-@import 'footer.scss';
-@import 'footer-list.scss';
-@import 'footer-term.scss';
+@import './blocks/footer.scss';
+@import './blocks/footer-list.scss';
+@import './blocks/footer-term.scss';
