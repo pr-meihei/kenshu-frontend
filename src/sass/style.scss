@@ -1,7 +1,10 @@
 @charset "UTF-8";
 
-/* ベース */
+/* コンフィグ(CSSで消えるやつ) */
 @import './config/var.scss';
+
+/* ベース */
+@import '../css/reset';  // cssファイルも拡張子をつけなければインラインで読み込む
 @import './config/base.scss';
 
 /* lib */
