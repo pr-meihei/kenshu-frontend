@@ -2,8 +2,8 @@
 
 .category-header {
   $block: &;
-  background-color: $bg-white-1;
-  border-bottom: 1px solid $border-gray-2;
+  background-color: $white;
+  border-bottom: 1px solid $gray-e4;
 
   &__list {
     display: flex;
@@ -16,7 +16,7 @@
 
   %__item {
     font-size: 1.3rem;
-    color: $text-blue-2;
+    color: $blue;
   }
 
   &__item {

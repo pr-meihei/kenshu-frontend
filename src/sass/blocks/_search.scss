@@ -23,7 +23,7 @@
     &::placeholder {
       font-size: 1.3rem;
       line-height: 19px;
-      color: $text-gray-2;
+      color: $gray-bb;
     }
   }
 
@@ -31,10 +31,10 @@
     display: inline-block;
     width: 30px;
     height: 30px;
-    background-color: $bg-blue-1;
+    background-color: $light-blue;
     background-repeat: no-repeat;
     background-position: 6px 6px;
-    // background: $bg-blue-1 url(../../images/common/icon_search.svg) no-repeat scroll 6px 6px;  // だめ
+    // background: $light-blue url(../../images/common/icon_search.svg) no-repeat scroll 6px 6px;  // だめ
     background-size: 17px 17px;
     border: 0;
     border-radius: 0px 4px 4px 0px;

@@ -17,7 +17,7 @@
     overflow: hidden;
     font-size: 1.3rem;
     line-height: 19px;
-    color: $text-black;
+    color: $dark-gray;
     transition: color .3s ease-in-out;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 3;
@@ -25,7 +25,7 @@
 
   &:hover {
     #{$block}__text {
-      color: $text-blue-1;
+      color: $light-blue;
       text-decoration: underline;
     }
   }

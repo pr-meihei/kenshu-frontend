@@ -16,11 +16,11 @@
   }
 
   &__link {
-    color: $text-gray-3;
+    color: $gray-79;
 
     &:hover {
-      color: $text-black;
-      border-bottom: 1px solid $text-black;
+      color: $dark-gray;
+      border-bottom: 1px solid $dark-gray;
     }
   }
 }

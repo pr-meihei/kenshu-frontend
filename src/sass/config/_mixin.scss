@@ -10,7 +10,7 @@
   @include background-image('common/icon_time.svg');
 }
 
-@mixin number-box-24 ($col: $text-white, $bg-col: $text-blue-2) {
+@mixin number-box-24 ($col: $white, $bg-col: $blue) {
   width: 24px;
   height: 24px;
   padding-right: 4px;

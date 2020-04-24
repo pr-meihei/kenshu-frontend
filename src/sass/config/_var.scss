@@ -4,34 +4,25 @@
 $debug: true;
 
 // フォント関係の設定 ----------------------
-$font-base: 'Hiragino Kaku Gothic ProN',
-  Meiryo,
-  sans-serif;
+$font-base: 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif;
 
 // カラー関連の設定 -----------------------
-$text-white: #fff;
-$text-gray-1: #bfc9d7;
-$text-gray-2: #bbb;
-$text-gray-3: #a2a2a2;
-$text-gray-4: #797979;
-$text-black: #3b3b3b;
-$text-blue-1: #3081c9;
-$text-blue-2: #294c7a;
-$bg-white-1: #fff;
-$bg-white-2: #f2f2f2;
-$bg-white-3: #f1f1f1;
-$bg-blue-1: #3081c9;
-$bg-blue-2: #345584;
-$bg-blue-3: #294c7a;
-$bg-blue-4: #24436f;
-$bg-lightblue: #59a7e6;
-$bg-gray-1: #fafafa;
-$border-white: #fff;
-$border-gray-1: #bfc9d7;
-$border-gray-2: #e2e2e2;
-$border-gray-3: #e4e4e4;
-$border-gray-4: #f1f1f1;
-$border-gray-5: #e0e0e0;
+$white: #fff;
+$white-fa: #fafafa;  // footer-bg
+$white-f2: #f2f2f2;  // ranking-bg
+$white-f1: #f1f1f1;  // tag-cloud-box
+$gray: #a2a2a2;  // details-txt
+$gray--1: #bfc9d7;  // header-nav, logo-heading
+$gray-e4: #e4e4e4;  // article-border
+$gray-e0: #e0e0e0;  // footer-border
+$gray-bb: #bbb;  // search-box-text
+$gray-79: #797979;  // footer-text
+$dark-gray: #3b3b3b;
+$light-blue: #3081c9;  // blue-texts, button
+$light-blue--1: #59a7e6;  // button-hover
+$blue: #294c7a;  //　corporate
+$blue--1: #345584;  // header-release
+$black: #1a1a1a;
 
 // Path関連の設定 -----------------------
 $http-path: '/kenshu-frontend/';

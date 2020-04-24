@@ -8,7 +8,7 @@
   width: auto;
   height: 13px;
   font-size: 1.2rem;
-  color: $text-gray-3;
+  color: $gray;
 
   &__datetime {
     width: auto;
@@ -24,7 +24,7 @@
 
   &__company-link {
     &:hover{
-      color: $text-black;
+      color: $dark-gray;
     }
   }
 }

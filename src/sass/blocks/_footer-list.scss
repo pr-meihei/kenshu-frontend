@@ -12,7 +12,7 @@
     margin-bottom: 18px;
     font-size: 1.3rem;
     font-weight: normal;
-    color: $text-black;
+    color: $black;
   }
 
   &__list {
@@ -31,11 +31,11 @@
 
   &__link {
     font-size: 1.2rem;
-    color: $text-gray-4;
+    color: $gray-79;
 
     &:hover {
-      color: $text-black;
-      border-bottom: 1px solid $text-black;
+      color: $dark-gray;
+      border-bottom: 1px solid $dark-gray;
     }
   }
 

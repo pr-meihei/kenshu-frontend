@@ -7,7 +7,7 @@
   padding: 0 15px;
   margin: 0 11px 0 26px;
   text-align: center;
-  background-color: $bg-blue-2;
+  background-color: $blue--1;
   border-radius: 4px;
 
   &__list {
@@ -20,24 +20,24 @@
 
   &__item {
     height: 14px;
-    color: $text-white;
+    color: $white;
 
     & + & {
       padding-left: 10px;
-      border-left: 1px solid $border-white;
+      border-left: 1px solid $white;
     }
   }
 
   &__link {
     font-size: 1.3rem;
-    color: $text-white;
+    color: $white;
 
     &:hover {
-      border-bottom: 1px solid $border-white;
+      border-bottom: 1px solid $white;
     }
 
     &:link {
-      color: $text-white;
+      color: $white;
     }
   }
 }

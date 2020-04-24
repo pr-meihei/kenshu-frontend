@@ -7,7 +7,7 @@
   height: auto;
   padding-bottom: 11px;
   margin: 40px auto 0;
-  border-bottom: 1px solid $border-gray-3;
+  border-bottom: 1px solid $gray-e4;
 
   &__list {
     display: flex;
@@ -21,30 +21,30 @@
     padding: 0 8px;
     margin: 0 5px 9px;
     font-size: 1.2rem;
-    color: $text-gray-3;
+    color: $dark-gray;
     border-radius: 11px;
   }
 
   &__box {
     @extend %__box;
     line-height: 22px;
-    background-color: $bg-white-3;
+    background-color: $white-f1;
 
     &:hover {
       #{$block}__link {
-        color: $text-black;
+        color: $black;
       }
     }
 
     &--more {
       @extend %__box;
       line-height: 21px;
-      background-color: $bg-white-1;
-      border: 1px solid $border-gray-4;
+      background-color: $white;
+      border: 1px solid $white-f1;
 
       &:hover {
         #{$block}__link {
-          color: $text-blue-1;
+          color: $light-blue;
         }
       }
     }

@@ -31,5 +31,5 @@
 }
 
 .blue-btn {
-  @include color-btn(null, null, $text-white, $bg-blue-1, $bg-lightblue);
+  @include color-btn(null, null, $white, $light-blue, $light-blue--1);
 }

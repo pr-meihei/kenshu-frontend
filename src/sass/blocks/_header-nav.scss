@@ -27,29 +27,29 @@
       #{$block}__link {  // Modifierから他のelementを参照してる
         font-weight: bold;
         line-height: 13px;
-        color: $text-white;
+        color: $white;
       }
     }
 
     /* 横リストに縦線を引く */
     & + & {
       padding-left: 10px;
-      border-left: 1px solid $border-gray-1;
+      border-left: 1px solid $gray--1;
     }
 
     /* 無理やりなので要確認 */
     &--active + & {
       padding-left: 10px;
-      border-left: 1px solid $border-gray-1;
+      border-left: 1px solid $gray--1;
     }
   }
 
   &__link {
     font-size: 1.3rem;
-    color: $text-gray-1;
+    color: $gray--1;
 
     &:hover {
-      color: $text-white;
+      color: $white;
     }
   }
 }

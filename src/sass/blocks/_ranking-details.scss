@@ -7,14 +7,14 @@
   display: block;
   width: 161px;
   height: 118px;
-  color: $text-gray-3;
+  color: $gray;
 
   &__datetime {
     display: block;
     width: 100%;
     height: 14px;
     font-size: 1.2rem;
-    color: $text-gray-3;
+    color: $gray;
 
     &::before{
       @include datetime-img;
@@ -28,7 +28,7 @@
 
   &__company-link {
     &:hover{
-      color: $text-black;
+      color: $dark-gray;
     }
   }
 
