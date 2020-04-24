@@ -1,0 +1,26 @@
+/* ====== footer-term block ===== */
+
+.footer-term {
+
+  &__list {
+    display: flex;
+    height: 46px;
+    padding-top: 16px;
+    padding-bottom: 18px;
+    list-style: none;
+  }
+
+  &__item {
+    margin-right: 10px;
+    font-size: 1.2rem;
+  }
+
+  &__link {
+    color: $gray-79;
+
+    &:hover {
+      color: $dark-gray;
+      border-bottom: 1px solid $dark-gray;
+    }
+  }
+}

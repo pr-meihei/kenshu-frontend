@@ -1,0 +1,51 @@
+/* ====== header-nav block ===== */
+
+.header-nav {
+  $block: &;
+  display: block;
+
+  &__list {
+    display: flex;
+    height: 100%;
+  }
+
+  %__item {
+    height: 100%;
+    padding-right: 10px;
+  }
+
+  &__item {
+    @extend %__item;
+
+    &--active {
+      @extend %__item;
+
+      #{$block}__link {  // Modifierから他のelementを参照してる
+        font-weight: bold;
+        line-height: 13px;
+        color: $white;
+      }
+    }
+
+    /* 横リストに縦線を引く */
+    & + & {
+      padding-left: 10px;
+      border-left: 1px solid $gray--1;
+    }
+
+    /* 無理やりなので要確認 */
+    &--active + & {
+      padding-left: 10px;
+      border-left: 1px solid $gray--1;
+    }
+  }
+
+  &__link {
+    font-size: 1.3rem;
+    color: $gray--1;
+
+    &:hover {
+      color: $white;
+    }
+  }
+}

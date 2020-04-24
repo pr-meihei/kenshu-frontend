@@ -1,0 +1,30 @@
+/* ====== logo block ===== */
+
+.logo {
+  display: flex;
+  align-items: center;
+  width: 485px;
+  height: 30px;
+
+  &__img-link {
+    display: block;
+    width: 122px;
+    height: 22px;
+    overflow: hidden;
+    text-indent: 100%;
+    white-space: nowrap;
+    @include background-image('common/logo_prtimes.svg');
+  }
+
+  &__heading-1 {
+    display: block;
+    width: 335px;
+    height: 30px;
+    margin: 0 10px 0 18px;
+    font-size: 1.2rem;
+    font-weight: normal;
+    line-height: 30px;
+    color: $gray--1;
+    white-space: 0;
+  }
+}

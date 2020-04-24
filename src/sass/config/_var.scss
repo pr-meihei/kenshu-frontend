@@ -1,0 +1,30 @@
+@charset "UTF-8";
+
+// デバッグ環境の設定 ----------------------
+$debug: false;
+
+// フォント関係の設定 ----------------------
+$font-base: 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif;
+
+// カラー関連の設定 -----------------------
+$white: #fff;
+$white-fa: #fafafa;  // footer-bg
+$white-f2: #f2f2f2;  // ranking-bg
+$white-f1: #f1f1f1;  // tag-cloud-box
+$gray: #a2a2a2;  // details-txt
+$gray--1: #bfc9d7;  // header-nav, logo-heading
+$gray-e4: #e4e4e4;  // article-border
+$gray-e0: #e0e0e0;  // footer-border
+$gray-bb: #bbb;  // search-box-text
+$gray-79: #797979;  // footer-text
+$dark-gray: #3b3b3b;
+$light-blue: #3081c9;  // blue-texts, button
+$light-blue--1: #59a7e6;  // button-hover
+$blue: #294c7a;  //　corporate
+$blue--1: #345584;  // header-release
+$black: #1a1a1a;
+
+// Path関連の設定 -----------------------
+$http-path: '/kenshu-frontend/';
+$debug-path: '../../';  // './'->'sass/'; '../'->'src/'; '../../'->'workspace/';
+$img-root-path: 'src/images/';

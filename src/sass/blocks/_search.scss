@@ -1,0 +1,47 @@
+/* ====== search block ===== */
+
+.search {
+  display: block;
+  width: 288px;
+  height: 30px;
+  font-size: 0;
+  text-align: center;
+
+  &__input {
+    display: inline-block;
+    width: 258px;
+    height: 30px;
+    padding: 3px 15px;
+    border: 0;
+    border-radius: 4px 0px 0px 4px;
+
+    &:focus {
+      border: 0;
+      outline: 0;
+    }
+
+    &::placeholder {
+      font-size: 1.3rem;
+      line-height: 19px;
+      color: $gray-bb;
+    }
+  }
+
+  &__button {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-color: $light-blue;
+    background-repeat: no-repeat;
+    background-position: 6px 6px;
+    background-size: 17px 17px;
+    border: 0;
+    border-radius: 0px 4px 4px 0px;
+    @include background-image('common/icon_search.svg');
+
+    &:focus {
+      border: 0;
+      outline: 0;
+    }
+  }
+}

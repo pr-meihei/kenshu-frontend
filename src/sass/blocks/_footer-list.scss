@@ -1,0 +1,46 @@
+/* ====== footer-list block ===== */
+
+%footer-list {
+  width: 25%;
+  height: 210px;
+}
+
+.footer-list {
+  @extend %footer-list;
+
+  &__heading-4 {
+    margin-bottom: 18px;
+    font-size: 1.3rem;
+    font-weight: normal;
+    color: $black;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 100%;
+    padding-bottom: 19px;
+    list-style: none;
+  }
+
+  &__item {
+    height: 1.2rem;
+    margin-bottom: 18px;
+  }
+
+  &__link {
+    font-size: 1.2rem;
+    color: $gray-79;
+
+    &:hover {
+      color: $dark-gray;
+      border-bottom: 1px solid $dark-gray;
+    }
+  }
+
+  &--x2 {  //widthが倍
+    @extend %footer-list;
+    width: 50%;
+  }
+}
