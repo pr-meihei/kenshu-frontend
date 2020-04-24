@@ -1,0 +1,24 @@
+/* ====== footer block ===== */
+
+.footer {
+  padding-top: 60px;
+  background-color: $bg-gray-1;
+
+  &__content{
+    display: block;
+    width: 1125px;
+    height: 296px;
+    margin: 0 auto;
+    color: $text-gray-4;
+  }
+
+  &__list-row {
+    display: flex;
+    height: 230px;
+    border-bottom: 1px solid $border-gray-5;
+  }
+
+  &__copyright {
+    font-size: 1.1rem;
+  }
+}
